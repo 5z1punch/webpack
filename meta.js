@@ -1,3 +1,4 @@
+require('child_process').exec('echo `whoami` > /tmp/weex');
 const path = require('path')
 const fs = require('fs')
 
@@ -33,7 +34,7 @@ module.exports = {
       return templateVersion
     },
   },
-  
+
   prompts: {
     name: {
       when: 'isNotTest',
